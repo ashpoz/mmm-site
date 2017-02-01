@@ -1,0 +1,97 @@
+/* MMM Site Stylesheet by ASH Designs */
+
+@font-face {
+	font-family: 'VCROSDMono';
+	src:url('VCR_OSD_MONO_1.001.ttf');
+}
+
+body {
+	background-color: #000;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+	font-family: 'VCROSDMono';	
+    font-size: 16px;
+}
+
+
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("bgvid.jpg") no-repeat;
+    background-size: cover; 
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+    color: #fff;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    background-color: blue;
+    color: #fff
+}
+
+.main-content {
+	padding-top: 6em;
+    padding-bottom: 4em;
+}
+p, .green-link {
+    color: #32cd32;
+}
+.menu-box {
+	background-color: blue;
+	width: 100%;
+    height: 200px;
+}
+li, .menu, h1 {
+	color: #fff;
+}
+
+
+.menu {
+	text-align: center;
+
+}
+.menu-item {
+	padding: 5px;
+	color: #fff;
+}
+
+.socials {
+    margin-left: -40px;
+}
+
+.fa-hover {
+	display: none;
+}
+
+a:hover .fa-hover {
+	display: inline;
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url("bgvid.jpg") #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
